@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Product Details</title>
+    <style>
+        .content {
+            /* width: 250px; */
+            position: relative;
+            box-shadow: rgb(0, 0, 0, 0.500);
+            border-radius: 40px;
+            text-align: center;
+            /* margin-left: 15px; */
+            padding: 20px;
+        }
+        .box:last-child {
+            margin-right: 0;
+        }
+
+        .box .img img {
+            width: 80px;
+            /* margin-bottom: 10px; */
+            margin-left: 30%;
+        }
+
+        @media(max-width:991px) {
+            .box {
+                width: 100%;
+            }
+        }
+
+        @media(max-width:767px) {
+            .box {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .content {
+                margin-right: 0;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        .box {
+            margin: 4%;
+            padding: 4%;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.300) 0px 5px 15px;
+            border-radius: 15px;
+            width:100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 space-between">
+        <div class="px-3 py-3 lg:px-5 lg:pl-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center justify-start">
+                    <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar"
+                        aria-controls="logo-sidebar" type="button"
+                        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                        <span class="sr-only">Open sidebar</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" fill-rule="evenodd"
+                                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+                            </path>
+                        </svg>
+                    </button>
+
+
+                    <h3 class="text-blue-700">Herbal 360</h3>
+                    <p>18 Aug , 2023</p>
+
+                   <!-- <input type="search" class="rounded-full" name="button" placeholder="Search here" id="search" > -->
+
+            <!-- <button type="button" class="bg-blue-600 rounded">
+            <a class="text-white p-lg-5 text-2xl" href="ProductForm.html">Add New</a>
+            <span class="badge p-lg-3 text-blue-600"></span>
+            </button> -->
+                    </a>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex items-center ml-3">
+                        <button type="button" class="bg-blue-600 rounded-full">
+                            <a class="text-white p-lg-5 text-2xl" href="ProductForm.html">Add New</a>
+                            <span class="badge p-lg-3 text-blue-600"></span>
+                            </button>
+                        <p>Admin Name</p>
+                        <div>
+                            <button type="button"
+                                class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                                aria-expanded="false" data-dropdown-toggle="dropdown-user">
+
+                                <img class="w-8 h-8 rounded-full"
+                                    src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                                    alt="user photo">
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <aside id="logo-sidebar"
+        class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+        aria-label="Sidebar">
+        <div class="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
+            <ul class="space-y-2 font-medium">
+                <li>
+                    <a href="frontpage.html"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 27 27" fill="none">
+                            <path
+                                d="M24.6375 6.84493L18.2197 0.632819C17.8295 0.253131 17.2969 0.0369202 16.7484 0.0369202L4.66172 0.00527954C3.1957 0.00527954 2.00391 1.18653 2.00391 2.642V24.358C2.00391 25.7871 3.23262 27 4.68809 27H22.565C23.9941 27 25.1543 25.8135 25.1543 24.3527V8.10528C25.1543 7.61485 24.9697 7.16661 24.6375 6.84493ZM18.1934 3.54376L21.5104 6.75001H18.7682C18.4623 6.75001 18.1934 6.5127 18.1934 6.24376V3.54376ZM22.565 24.8906H4.68809C4.39277 24.8906 4.11328 24.6322 4.11328 24.3527V2.642C4.11328 2.36251 4.37168 2.11465 4.66172 2.11465L16.084 2.1463V6.24376C16.084 7.6834 17.2863 8.85938 18.7682 8.85938H23.0449V24.3527C23.0449 24.6164 22.8656 24.8906 22.565 24.8906Z"
+                                fill="#577AF8" fill-opacity="0.54" />
+                            <path
+                                d="M6.5918 14.0801C6.5918 14.6602 7.06641 15.1348 7.64648 15.1348H16.875C17.4551 15.1348 17.9297 14.6602 17.9297 14.0801C17.9297 13.5 17.4551 13.0254 16.875 13.0254H7.64648C7.06641 13.0254 6.5918 13.5 6.5918 14.0801Z"
+                                fill="#577AF8" fill-opacity="0.54" />
+                            <path
+                                d="M7.59375 10.916H13.7109C14.291 10.916 14.7656 10.4414 14.7656 9.86133C14.7656 9.28125 14.291 8.80664 13.7109 8.80664H7.59375C7.01367 8.80664 6.53906 9.28125 6.53906 9.86133C6.53906 10.4414 7.01367 10.916 7.59375 10.916Z"
+                                fill="#577AF8" fill-opacity="0.54" />
+                            <path
+                                d="M19.5117 17.2441H7.64648C7.06641 17.2441 6.5918 17.7188 6.5918 18.2988C6.5918 18.8789 7.06641 19.3535 7.64648 19.3535H19.5117C20.0918 19.3535 20.5664 18.8789 20.5664 18.2988C20.5664 17.7188 20.0918 17.2441 19.5117 17.2441Z"
+                                fill="#577AF8" fill-opacity="0.54" />
+                        </svg>
+                        <span class="ml-3">Report</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="customerD.html"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="35" viewBox="0 0 38 41" fill="none">
+                            <g clip-path="url(#clip0_67_255)">
+                                <path
+                                    d="M19 10.0792C20.8367 10.0792 22.325 11.685 22.325 13.6667C22.325 15.6483 20.8367 17.2542 19 17.2542C17.1633 17.2542 15.675 15.6483 15.675 13.6667C15.675 11.685 17.1633 10.0792 19 10.0792ZM19 25.4542C23.7025 25.4542 28.6583 27.9483 28.6583 29.0417V30.9208H9.34167V29.0417C9.34167 27.9483 14.2975 25.4542 19 25.4542ZM19 6.83333C15.5008 6.83333 12.6667 9.89124 12.6667 13.6667C12.6667 17.4421 15.5008 20.5 19 20.5C22.4992 20.5 25.3333 17.4421 25.3333 13.6667C25.3333 9.89124 22.4992 6.83333 19 6.83333ZM19 22.2083C14.7725 22.2083 6.33334 24.4975 6.33334 29.0417V32.4583C6.33334 33.3979 7.04584 34.1667 7.91667 34.1667H30.0833C30.9542 34.1667 31.6667 33.3979 31.6667 32.4583V29.0417C31.6667 24.4975 23.2275 22.2083 19 22.2083Z"
+                                    fill="#577AF8" fill-opacity="0.54" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_67_255">
+                                    <rect width="38" height="41" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span class="flex-1 ml-3 whitespace-nowrap">Customer</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="StaffD.html"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 29 30" fill="none">
+                            <path
+                                d="M24.1667 14.375V8.75L18.7292 2.5H6.04167C5.7212 2.5 5.41386 2.6317 5.18725 2.86612C4.96064 3.10054 4.83334 3.41848 4.83334 3.75V26.25C4.83334 26.5815 4.96064 26.8995 5.18725 27.1339C5.41386 27.3683 5.7212 27.5 6.04167 27.5H12.0833"
+                                stroke="#577AF8" stroke-opacity="0.54" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M20.5417 22.5C21.8764 22.5 22.9583 21.3807 22.9583 20C22.9583 18.6193 21.8764 17.5 20.5417 17.5C19.207 17.5 18.125 18.6193 18.125 20C18.125 21.3807 19.207 22.5 20.5417 22.5Z"
+                                stroke="#577AF8" stroke-opacity="0.54" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M25.375 27.5C25.375 26.1739 24.8658 24.9021 23.9594 23.9645C23.0529 23.0268 21.8235 22.5 20.5417 22.5C19.2598 22.5 18.0304 23.0268 17.124 23.9645C16.2176 24.9021 15.7083 26.1739 15.7083 27.5M18.125 2.5V8.75H24.1667"
+                                stroke="#577AF8" stroke-opacity="0.54" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span class="flex-1 ml-3 whitespace-nowrap">Staffs</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="ProductD.html"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" viewBox="0 0 28 33" fill="none">
+                            <path
+                                d="M20.125 8.25C19.8929 8.25 19.6704 8.35865 19.5063 8.55205C19.3422 8.74544 19.25 9.00775 19.25 9.28125V27.8438C19.25 28.1173 19.3422 28.3796 19.5063 28.573C19.6704 28.7664 19.8929 28.875 20.125 28.875C20.3571 28.875 20.5796 28.7664 20.7437 28.573C20.9078 28.3796 21 28.1173 21 27.8438V9.28125C21 9.00775 20.9078 8.74544 20.7437 8.55205C20.5796 8.35865 20.3571 8.25 20.125 8.25ZM8.74912 14.4375H18.375V21.6562H8.74912C8.51721 21.656 8.29488 21.5472 8.13097 21.3538C7.96707 21.1605 7.875 20.8983 7.875 20.625V15.4688C7.875 15.1954 7.96707 14.9333 8.13097 14.7399C8.29488 14.5465 8.51721 14.4378 8.74912 14.4375Z"
+                                fill="#577AF8" fill-opacity="0.54" />
+                            <path
+                                d="M7 2.57812C7 2.16787 7.13828 1.77441 7.38442 1.48432C7.63056 1.19422 7.9644 1.03125 8.3125 1.03125H19.6875C20.0356 1.03125 20.3694 1.19422 20.6156 1.48432C20.8617 1.77441 21 2.16787 21 2.57812C21 2.98838 20.8617 3.38184 20.6156 3.67193C20.3694 3.96203 20.0356 4.125 19.6875 4.125H19.25V5.15625H21.0919C22.9276 5.15625 24.5 6.82894 24.5 9.01106V28.1139C24.5 30.2961 22.9276 31.9688 21.0919 31.9688H6.90812C5.07237 31.9688 3.5 30.2961 3.5 28.1139V9.01106C3.5 6.82894 5.07237 5.15625 6.90812 5.15625H8.75V4.125H8.3125C7.9644 4.125 7.63056 3.96203 7.38442 3.67193C7.13828 3.38184 7 2.98838 7 2.57812ZM6.90812 7.21875C5.94563 7.21875 5.25 8.07469 5.25 9.01106V28.1139C5.25 29.0503 5.94563 29.9062 6.90812 29.9062H21.0919C22.0544 29.9062 22.75 29.0503 22.75 28.1139V9.01106C22.75 8.07469 22.0544 7.21875 21.0919 7.21875H6.90812Z"
+                                fill="#577AF8" fill-opacity="0.54" />
+                        </svg>
+                        <span class="flex-1 ml-3 whitespace-nowrap">Product</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 37 39" fill="none">
+                            <path d="M21.5833 19.5H6.16667M6.16667 19.5L10.7917 14.625M6.16667 19.5L10.7917 24.375"
+                                stroke="#577AF8" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M30.8333 19.5C30.8333 16.0522 29.5339 12.7456 27.221 10.3076C24.908 7.86964 21.771 6.5 18.5 6.5M18.5 32.5C20.3491 32.5018 22.1748 32.0644 23.8416 31.2205C25.5084 30.3765 26.9733 29.1476 28.1277 27.625"
+                                stroke="#577AF8" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                        <span class="flex-1 ml-3 whitespace-nowrap">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+
+    <div class="p-4 sm:ml-64">
+        <div class="p-4 border-2 border-gray-200  rounded-lg dark:border-gray-700 mt-14">
+            <h3>Product Detail</h3>
+            <div class="grid grid-cols-3 gap-4 mb-4 text-center">
+                <div class="box">
+                    <div class="content">
+                        <img class="img-fluid" src="assets/img2.png" style="width: 30%; align-items:center">
+                        <h3>Product 1</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.</p>
+                    </div>
+                </div>
+                <!-- <class class="container"> -->
+                <div class="box">
+
+                    <div class="content">
+                        <img class="img-fluid" src="assets/img1.png" style="width: 30%;">
+                        <h3>Product 2</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.</p>
+                    </div>
+                </div>
+                <!-- <div class="container"> -->
+                <div class="box ">
+
+                    <div class="content align-items:center">
+                        <img class="img-fluid" src="assets/img3.png" style="width: 20%;">
+                        <h3>Product 3</h3>
+                        <p>It is a long established fact that a reader will be distracted by    the readable content of a
+                            page when looking at its layout.</p>
+                    </div>
+                </div>
+            </div>
+         
+            <div class="grid grid-cols-3 gap-4 mb-4 text-center">
+
+                <div class="box">
+                    <div class="content">
+                        <img class="img-fluid" src="assets/img2.png" style="width: 30%;">
+                        <h3>Product 1</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.</p>
+                    </div>
+                </div>
+              
+                <div class="box">
+                    <div class="content">
+                        <img class="img-fluid" src="assets/img1.png" style="width: 30%;">
+                        <h3>Product 2</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.</p>
+                    </div>
+                </div>
+               
+                <div class="box">
+
+                    <div class="content">
+                        <img class="img-fluid" src="assets/img3.png" style="width: 20%;">
+                        <h3>Product 3</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout.</p>
+                    </div>
+                </div>
+            </div>     
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+           <div class="col-2">
+               <h3>Product</h3>
+        </div>
+         <div class="col-5">
+         
+
+    <ul class="max-w-md space-y-1 list-disc list-inside dark:text-gray-400 text-2xl"> 
+   <li>
+     search bar to search for customers based on name or ID
+   </li>
+   <li>
+       Add new option to register new customer.
+   </li>
+   <li>
+       Customer details with listed info
+   </li>
+   <li>
+       Option to convert customer into phase 2 member.
+   </li>
+   <li>
+       Sorted by newest , oldest.
+   </li>
+</ul>
+         </div>
+        </div>
+     </div>
+
+</body>
+
+</html>
