@@ -20,57 +20,21 @@
     <link rel="stylesheet" href="index.css">
     <title>Product Details</title>
     <style>
-        .content {
-            /* width: 250px; */
-            position: relative;
-            box-shadow: rgb(0, 0, 0, 0.500);
-            border-radius: 40px;
+        .productbox {
+            margin: 3%;
+            padding: 0%;
             text-align: center;
-            /* margin-left: 15px; */
-            padding: 20px;
-        }
-        .box:last-child {
-            margin-right: 0;
-        }
-
-        .box .img img {
-            width: 80px;
-            /* margin-bottom: 10px; */
-            margin-left: 30%;
-        }
-
-        @media(max-width:991px) {
-            .box {
-                width: 100%;
-            }
-        }
-
-        @media(max-width:767px) {
-            .box {
-                width: 100%;
-                flex-direction: column;
-            }
-
-            .content {
-                margin-right: 0;
-                width: 100%;
-                margin-bottom: 20px;
-            }
-        }
-        .box {
-            margin: 4%;
-            padding: 4%;
-            text-align: center;
-            box-shadow: rgba(0, 0, 0, 0.300) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.300) 0px 5px 20px;
             border-radius: 15px;
-            width:100%;
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
-
-    <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 space-between">
+    <!-- <-- nav start-->
+    <nav
+        class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700 space-between">
         <div class="px-3 py-3 lg:px-5 lg:pl-3">
             <div class="flex items-center justify-between">
                 <div class="flex items-center justify-start">
@@ -85,17 +49,9 @@
                             </path>
                         </svg>
                     </button>
-
-
                     <h3 class="text-blue-700">Herbal 360</h3>
                     <p>18 Aug , 2023</p>
-
-                   <!-- <input type="search" class="rounded-full" name="button" placeholder="Search here" id="search" > -->
-
-            <!-- <button type="button" class="bg-blue-600 rounded">
-            <a class="text-white p-lg-5 text-2xl" href="ProductForm.html">Add New</a>
-            <span class="badge p-lg-3 text-blue-600"></span>
-            </button> -->
+                    <!-- <input type="search" class="rounded-full" name="button" placeholder="Search here" id="search" > -->
                     </a>
                 </div>
                 <div class="flex items-center">
@@ -103,7 +59,7 @@
                         <button type="button" class="bg-blue-600 rounded-full">
                             <a class="text-white p-lg-5 text-2xl" href="ProductForm.html">Add New</a>
                             <span class="badge p-lg-3 text-blue-600"></span>
-                            </button>
+                        </button>
                         <p>Admin Name</p>
                         <div>
                             <button type="button"
@@ -111,7 +67,7 @@
                                 aria-expanded="false" data-dropdown-toggle="dropdown-user">
 
                                 <img class="w-8 h-8 rounded-full"
-                                    src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                                    src=""
                                     alt="user photo">
 
                             </button>
@@ -121,6 +77,9 @@
             </div>
         </div>
     </nav>
+    <!-- <-- nav end -->
+
+    <!-- <-- sidebar start-->
 
     <aside id="logo-sidebar"
         class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
@@ -128,7 +87,7 @@
         <div class="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
             <ul class="space-y-2 font-medium">
                 <li>
-                    <a href="frontpage.html"
+                    <a href="index.html"
                         class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 27 27" fill="none">
                             <path
@@ -220,75 +179,76 @@
         </div>
     </aside>
 
+    <!-- <-- sidebar end -->
+
+
+    <!-- -- product details -->
 
     <div class="p-4 sm:ml-64">
         <div class="p-4 border-2 border-gray-200  rounded-lg dark:border-gray-700 mt-14">
-            <h3>Product Detail</h3>
-            <div class="grid grid-cols-3 gap-4 mb-4 text-center">
-                <div class="box">
-                    <div class="content">
-                        <img class="img-fluid" src="assets/img2.png" style="width: 30%; align-items:center">
-                        <h3>Product 1</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout.</p>
+
+            <div class="container mt-3  ml-5" style="overflow-x: auto;">
+                <h1 class="font-normal text-5xl">Product Details</h1>
+                <div class="grid grid-cols-3 gap-4 mb-4 text-center d-flex">
+                    <div class="box d-flex">
+                        <div class="productbox">
+                            <div class="img">
+                                <img src="assets/img1.png" style="width: 20%;">
+                            </div>
+                            <h3>Product 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, similique.</p>
+                        </div>
+                        <div class="productbox">
+                            <div class="img">
+                                <img src="assets/img2.png" style="width: 20%;">
+                            </div>
+                            <h3>Product 2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, similique.</p>
+                        </div>
+                        <div class="productbox">
+                            <div class="img">
+                                <img src="assets/img3.png" style="width: 20%;">
+                            </div>
+                            <h3>Product 3</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, similique.</p>
+                        </div>
                     </div>
                 </div>
-                <!-- <class class="container"> -->
-                <div class="box">
 
-                    <div class="content">
-                        <img class="img-fluid" src="assets/img1.png" style="width: 30%;">
-                        <h3>Product 2</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout.</p>
-                    </div>
-                </div>
-                <!-- <div class="container"> -->
-                <div class="box ">
-
-                    <div class="content align-items:center">
-                        <img class="img-fluid" src="assets/img3.png" style="width: 20%;">
-                        <h3>Product 3</h3>
-                        <p>It is a long established fact that a reader will be distracted by    the readable content of a
-                            page when looking at its layout.</p>
+                <div class="grid grid-cols-3 gap-4 mb-4 text-center d-flex">
+                    <div class="box d-flex">
+                        <div class="productbox">
+                            <div class="img">
+                                <img src="assets/img1.png" style="width: 20%;">
+                            </div>
+                            <h3>Product 4</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, similique.</p>
+                        </div>
+                        <div class="productbox">
+                            <div class="img">
+                                <img src="assets/img2.png" style="width: 20%;">
+                            </div>
+                            <h3>Product 5</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, similique.</p>
+                        </div>
+                        <div class="productbox">
+                            <div class="img">
+                                <img src="assets/img3.png" style="width: 20%;">
+                            </div>
+                            <h3>Product 6</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, similique.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-         
-            <div class="grid grid-cols-3 gap-4 mb-4 text-center">
-
-                <div class="box">
-                    <div class="content">
-                        <img class="img-fluid" src="assets/img2.png" style="width: 30%;">
-                        <h3>Product 1</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout.</p>
-                    </div>
-                </div>
-              
-                <div class="box">
-                    <div class="content">
-                        <img class="img-fluid" src="assets/img1.png" style="width: 30%;">
-                        <h3>Product 2</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout.</p>
-                    </div>
-                </div>
-               
-                <div class="box">
-
-                    <div class="content">
-                        <img class="img-fluid" src="assets/img3.png" style="width: 20%;">
-                        <h3>Product 3</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout.</p>
-                    </div>
-                </div>
-            </div>     
         </div>
     </div>
-    </div>
-    <div class="container">
+
+    <!-- -- product detail end -->
+
+
+
+    <!-- <div class="container">
         <div class="row justify-content-center">
            <div class="col-2">
                <h3>Product</h3>
@@ -315,7 +275,7 @@
 </ul>
          </div>
         </div>
-     </div>
+     </div> -->
 
 </body>
 

@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Home page</title>
     <style>
+        
         .box {
             position: relative;
             box-shadow: rgb(126, 124, 124);
@@ -34,7 +35,7 @@
             text-align: center;
             box-shadow: rgba(0, 0, 0, 0.300) 0px 5px 15px;
             border-radius: 15px;
-            width: 25vw;
+            width: 100%;
         }
 
         .card1 {
@@ -46,64 +47,64 @@
             width: 92%;
         }
     </style>
-<script>
-    window.onload = function() {
-    
-    var chart = new CanvasJS.Chart("chartContainer", {
-        animationEnabled: true,
-        title: {
-            text: "Sales Report"
-        },
-        axisX: {
-            title: "sales"
-        },
-        axisY: {
-            title: "Percentage",
-            suffix: "%",
-            includeZero: true
-        },
-        data: [{
-            type: "line",
-            name: "CPU Utilization",
-            connectNullData: true,
-            //nullDataLineDashType: "solid",
-            xValueType: "dateTime",
-            xValueFormatString: "DD MMM hh:mm TT",
-            yValueFormatString: "#,##0.##\"%\"",
-            dataPoints: [
-                { x: 1501048673000, y: 35.939 },
-                { x: 1501052273000, y: 40.896 },
-                { x: 1501055873000, y: 56.625 },
-                { x: 1501059473000, y: 26.003 },
-                { x: 1501063073000, y: 20.376 },
-                { x: 1501066673000, y: 19.774 },
-                { x: 1501070273000, y: 23.508 },
-                { x: 1501073873000, y: 18.577 },
-                { x: 1501077473000, y: 15.918 },
-                { x: 1501081073000, y: null }, // Null Data
-                { x: 1501084673000, y: 10.314 },
-                { x: 1501088273000, y: 10.574 },
-                { x: 1501091873000, y: 14.422 },
-                { x: 1501095473000, y: 18.576 },
-                { x: 1501099073000, y: 22.342 },
-                { x: 1501102673000, y: 22.836 },
-                { x: 1501106273000, y: 23.220 },
-                { x: 1501109873000, y: 23.594 },
-                { x: 1501113473000, y: 24.596 },
-                { x: 1501117073000, y: 31.947 },
-                { x: 1501120673000, y: 31.142 }
-            ]
-        }]
-    });
-    chart.render();
-    
-    }
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                    text: "Sales Report"
+                },
+                axisX: {
+                    title: "sales"
+                },
+                axisY: {
+                    title: "units",
+                    suffix: "",
+                    includeZero: true
+                },
+                data: [{
+                    type: "line",
+                    name: "CPU Utilization",
+                    connectNullData: true,
+                    //nullDataLineDashType: "solid",
+                    xValueType: "dateTime",
+                    xValueFormatString: "DD MMM hh:mm TT",
+                    yValueFormatString: "#,##0.##\"%\"",
+                    dataPoints: [
+                        { x: 1501048673000, y: 35.939 },
+                        { x: 1501052273000, y: 40.896 },
+                        { x: 1501055873000, y: 56.625 },
+                        { x: 1501059473000, y: 26.003 },
+                        { x: 1501063073000, y: 20.376 },
+                        { x: 1501066673000, y: 19.774 },
+                        { x: 1501070273000, y: 23.508 },
+                        { x: 1501073873000, y: 18.577 },
+                        { x: 1501077473000, y: 15.918 },
+                        { x: 1501081073000, y: null }, // Null Data
+                        // { x: 1501084673000, y: 10.314 },
+                        // { x: 1501088273000, y: 10.574 },
+                        // { x: 1501091873000, y: 14.422 },
+                        // { x: 1501095473000, y: 18.576 },
+                        // { x: 1501099073000, y: 22.342 },
+                        // { x: 1501102673000, y: 22.836 },
+                        // { x: 1501106273000, y: 23.220 },
+                        // { x: 1501109873000, y: 23.594 },
+                        // { x: 1501113473000, y: 24.596 },
+                        // { x: 1501117073000, y: 31.947 },
+                        // { x: 1501120673000, y: 31.142 }
+                    ]
+                }]
+            });
+            chart.render();
+
+        }
     </script>
 
 </head>
 
 <body>
-
+    <!-- nav start -->
     <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
         <div class="px-3 py-3 lg:px-5 lg:pl-3">
             <div class="flex items-center justify-between">
@@ -132,7 +133,7 @@
                                 aria-expanded="false" data-dropdown-toggle="dropdown-user">
 
                                 <img class="w-8 h-8 rounded-full"
-                                    src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                                    src=""
                                     alt="user photo">
 
                             </button>
@@ -142,14 +143,16 @@
             </div>
         </div>
     </nav>
+    <!-- nav end -->
 
+    <!-- sidebar start -->
     <aside id="logo-sidebar"
         class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
         aria-label="Sidebar">
         <div class="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
             <ul class="space-y-2 font-medium">
                 <li>
-                    <a href="frontpage.html"
+                    <a href="index.html"
                         class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 27 27" fill="none">
                             <path
@@ -240,15 +243,17 @@
             </ul>
         </div>
     </aside>
+    <!-- sidebar end -->
 
 
+    <!-- detail stock and bar chart -->
     <div class="p-4 sm:ml-64">
         <div class="p-4 border-2 border-gray-200 rounded-lg dark:border-gray-700 mt-14">
             <div class="grid grid-cols-2 gap-4 mb-4 text-center">
                 <div class="box">
                     <h4>Stock Available</h4>
                     <div class="content card1">
-                       
+
                         <div class="progress">
 
                             <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
@@ -283,7 +288,7 @@
 
 
                 </div>
-                <!-- <class class="container"> -->
+
                 <div class="box">
                     <h3>Product Availability</h3>
                     <canvas id="myChart" style="width:100%;max-width:700px; height: 50%;"></canvas>
@@ -316,7 +321,7 @@
             <!-- <div class="container">
                 <div class="row">
                   <div class="col"> -->
-                    <!-- <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            <!-- <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
                     <script>
                         const xValues = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
@@ -344,33 +349,39 @@
                             }
                         });
                     </script> -->
-                  <!-- </div>  
+            <!-- </div>  
                 </div>
               </div>      -->
 
-              <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-              <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>     
+            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+            <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
         </div>
     </div>
-    <div class="conatiner">
+    <!-- end detail stock and bar chart -->
+
+
+
+
+    <!-- <div class="conatiner">
         <div class="row justify-content-center">
             <div class="col-2">
                 <h3>Report</h3>
             </div>
             <div class="col-5">
-              <ul  class="max-w-md space-y-1 list-disc list-inside dark:text-gray-400 text-2xl">     
-                <li>
-                    overview of inventory and orders
-                </li>
-                <li>
-                    Includes report of stocks , orders , kitchen status ,products , sales 
-                </li>
-                <li>
-                    Sorted by daily,weekly,monthly.
-                </li>
-              </ul>
+                <ul class="max-w-md space-y-1 list-disc list-inside dark:text-gray-400 text-2xl">
+                    <li>
+                        overview of inventory and orders
+                    </li>
+                    <li>
+                        Includes report of stocks , orders , kitchen status ,products , sales
+                    </li>
+                    <li>
+                        Sorted by daily,weekly,monthly.
+                    </li>
+                </ul>
             </div>
-          </div>
-      </div>
+        </div>
+    </div> -->
 </body>
+
 </html>
